@@ -1,0 +1,49 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.content {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.title {
+  margin-right: 50px;
+}
+
+.closeIcon {
+  color: #717073;
+}
+
+.closeIcon:hover {
+  color: #000;
+}
+
+.header {
+  background-color: #f0f0f0;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1ps solid burlywood;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.body {
+  padding: 10px 20px;
+  pointer-events: none;
+}

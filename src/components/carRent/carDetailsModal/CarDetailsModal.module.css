@@ -1,0 +1,11 @@
+.desctiption {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+@media screen and (max-width: 620px) {
+  .image {
+    width: 100%;
+  }
+}

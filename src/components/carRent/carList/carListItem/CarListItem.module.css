@@ -1,0 +1,140 @@
+.image {
+  width: 150px;
+}
+
+.listItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  border: 2px solid #c1d72f;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.price {
+  font-size: large;
+  white-space: nowrap;
+}
+
+.vendor {
+  font-size: 14px;
+}
+
+.statusSign {
+  width: 16px !important;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.available {
+  color: #7ec40e !important;
+}
+
+.unavailable {
+  color: #970a0a !important;
+}
+
+.carMake {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.statusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 20px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.detailsIconContainer {
+  margin: 10px 40px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+}
+
+.spacer {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+  .details {
+    display: none;
+  }
+
+  .vendor {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .statusContainer {
+    display: none;
+  }
+
+  .listItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photoContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .priceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .carMake {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .vendor {
+    display: contents;
+    font-size: 16px;
+  }
+}
