@@ -33,14 +33,13 @@ After running npm start, it will run website on `localhost:3000` where you will 
 
 ![image](https://user-images.githubusercontent.com/11311786/135771819-8437db63-25b3-4975-b5ea-e89bab281d80.png)
 
-
-I arranged and split components between app specific like list and CarDetailsModal but as well tried to create elements which can be used in different places in the future like loading screen and modal. I set timeout for fetching data from api just to display loading logo but timeout can be removed what will speed up app testing but there is possibility that loading screen won’t be visible.
+I arranged and split components between app specific components like Carlist or CarDetailsModal and common components like Modal or Loading screen which can be used in different places in the future. I set timeout for fetching data from api just to display loading logo but timeout can be removed what will speed up app testing but there is possibility that loading screen won’t be visible.
 
 #### Testing
 
-In terms of testing I would start from creating cosmos library with all possible elements and mock data to display all possible variants of each component where visually I would be able to test if all options works properly when all data passed are properly formatted. It is good just for visual testing where I can test each element in every possible value variant and in different screen sizes and observe how it behaves and if change of one parameter is not affecting not expected components
+In terms of testing I would start from creating cosmos library with all possible elements and mock data to display all possible variants of each component where visually I would be able to test if all options works properly when all data passed are properly formatted. It is good just for visual testing where I can test each element in every possible value variant and in different screen sizes and observe how it behaves and if change of one parameter is not affecting not expected components.
 
 Another step would be testing components by rendering them in test file and comparing if rendered element is displaying data as expected in test.
 
-Next I would create test which is comparing whole component HTML rendered with expected HTML which is generated at properly working page and then is compared in unit test if rendered object HTML is exactly the same. This option is slightly different comparing to the previous test because previously we compared jus value in specific places but here it will compare whole component generated HTML code.
+Next I would create test which is comparing whole component HTML rendered with expected HTML which is generated at properly working page and then is compared in unit test if rendered object HTML is exactly the same. This option is slightly different comparing to the previous test because previously we compared just value in specific places but here it will compare whole component generated HTML code.
 
